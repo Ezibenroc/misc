@@ -8,7 +8,7 @@ from colorama import init, Fore, Back, Style
 
 init()
 
-args = ['latex', '-halt-on-error'] + sys.argv[1:]
+args = ['pdflatex', '-halt-on-error'] + sys.argv[1:]
 
 env = {'max_print_line': '9'*14}
 env.update(os.environ)
